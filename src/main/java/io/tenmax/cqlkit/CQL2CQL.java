@@ -84,6 +84,7 @@ public class CQL2CQL extends AbstractMapper{
 
         Matcher matcher = pattern.matcher(template);
         StringBuffer result = new StringBuffer();
+        
         for (int i = 0; i < definitions.length; i++) {
             Object value = row.getObject(i);
             String key = definitions[i].getName();
